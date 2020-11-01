@@ -1,3 +1,3 @@
-# info2180-project1
+# INFO2180 Project 1
 
-This is project1 for Ricardo Dixon
+This is the completed Project 1 for <Ricardo Dixon>

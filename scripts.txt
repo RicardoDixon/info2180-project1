@@ -1,0 +1,18 @@
+document.addEventListener("DOMContentLoaded", function()
+{
+    var p = document.createElement("p");
+    document.getElementsByClassName("message")[0].appendChild(p);
+    var btns = document.getElementsByTagName("button");
+    btns[0].addEventListener("click", function(event)
+    {
+        event.preventDefault();
+        if (document.getElementsByTagName("input")[0].value !== "")
+            p.innerHTML = `Thank you! Your email address ${document.getElementsByTagName("input")[0].value}` +
+                ` has been added to our mailing list!`;
+        else
+            p.innerHTML = "Please enter a valid email address";
+
+        document.getElementsByClassName("message")[0].replaceChild(p,
+            document.getElementsByClassName("message")[0].childNodes[0]);
+    });
+});
